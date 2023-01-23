@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Login to Pengion - chat app
+    link(rel='stylesheet', href='../static/css/style2.css')
+  body
+    .container
+      .form-box
+        .button-box
+          #btn
+          button.toggle-btn(type='button', onclick='login()') Log In
+          button.toggle-btn(type='button', onclick='register()') Register
+        .social-icons
+          img(src='../static/imgs/gp.png', alt='google')
+          img(src='../static/imgs/fb.png', alt='fb')
+          img(src='../static/imgs/tw.png', alt='twitter')
+        form#login.input-group(action='/pegion' method='post')
+          input#userid.input-field(type='text', name='username', placeholder='User Id', required='')
+          input.input-field(type='text', name='password', placeholder='Enter Password', required='')
+          input.check-box(type='checkbox', name='checkbox')
+          span Remember Password.
+          button.submit-btn(type='submit') Log in
+        form#register.input-group(action='/pegion' method='post')
+          input#userid2.input-field(type='text', name='username', placeholder='User Id', required='')
+          input.input-field(type='email', name='email', placeholder='Email Id', required='')
+          input.input-field(type='text', name='password', placeholder='Enter Password', required='')
+          input.check-box(type='checkbox', name='checkbox')
+          span I agree to terms and conditions.
+          button.submit-btn(type='submit') Register
+    script.
+      const loginForm = document.getElementById('login');
+      const registerForm = document.getElementById('register');
+      const togglebtn = document.getElementById('btn');
+      function register(){
+      loginForm.style.left = '-450px';
+      registerForm.style.left = '50px';
+      togglebtn.style.left = '110px';
+      }
+      function login(){
+      loginForm.style.left = '50px';
+      registerForm.style.left = '450px';
+      togglebtn.style.left = '0px';
+      }
+    script(src='../static/js/client.js')

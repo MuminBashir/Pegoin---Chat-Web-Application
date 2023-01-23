@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Pegion- Chat app
+    script(src='https://kit.fontawesome.com/fbb1750af4.js', crossorigin='anonymous')
+    script(defer='', src='http://localhost:8000/socket.io/socket.io.js')
+    script(defer='', src='../static/js/client.js')
+    link(rel='stylesheet', href='../static/css/style.css')
+  body
+    nav
+      img.logo(src='../static/logo.png', alt='Pegion')
+      h1 Welcome to Pegion - Chat app
+      
+    #container
+        //div.message.right #[b You:] #[div.txt Hello how are you] #[div.time 2:37]
+    .send
+      i.fa.fa-keyboard-o.fa-2x
+      form#send-container(action='#')
+        input#messageInp(type='text', name='messageInp', placeholder='Enter your message')
+        button.btn(type='submit') Send

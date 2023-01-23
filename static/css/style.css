@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle at 2.9% 7.7%, rgb(164, 14, 176) 0%, rgb(254, 101, 101) 90%);
+}
+
+nav {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.logo {
+    margin-bottom: 0.5rem;
+    height: 65px;
+    width: 65px;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+#container {
+    width: 60vw;
+    margin: auto;
+    /* background-color: yellow; */
+    height: 60vh;
+    padding: 20px;
+    padding-top: 10px;
+    border: 2px solid rgb(27, 22, 27);
+    border-radius: 15px;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    margin-bottom: 20px;
+}
+
+.message {
+    display: flex;
+    min-width: 15%;
+    max-width: 34%;
+    background-color: rgb(247, 153, 184);
+    padding: 8px 10px;
+    margin: 13px 0px;
+    border-radius: 10px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    position: relative;
+    float: right;
+    clear: both;
+}
+
+.center {
+    position: relative;
+    left: -16vw;
+    float: right;
+    clear: both;
+}
+
+.txt{
+    padding: 0px 15px 0px 4px;
+}
+
+.time{
+    align-self: flex-end;
+    font-size: 0.7rem;
+}
+
+.send {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send i {
+    padding-right: 7px;
+}
+
+#send-container input {
+    width: 52vw;
+    padding: 8px 10px;
+    font-size: 1.07rem;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+#send-container input:focus {
+    border: 1px solid black;
+}
+
+.btn {
+    padding: 8px 13px;
+    font-size: 0.95rem;
+    margin-left: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(192, 42, 206);
+    color: white;
+}
+
+@media screen and (max-width:1250px){
+
+    .txt{
+        padding: 0px 8px 0px 4px;
+    }
+    
+    .time{
+        align-self: flex-end;
+        justify-self: flex-end;
+        font-size: 0.65rem;
+    }
+
+    .message {
+        min-width: 25%;
+        max-width: 36%;
+        background-color: rgb(247, 153, 184);
+        padding: 6px 7px;
+        margin: 13px 0px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    
+    nav h1 {
+        font-size: 1rem;
+    }
+}
