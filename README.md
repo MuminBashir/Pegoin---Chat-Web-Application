@@ -1,6 +1,6 @@
 # Pegoin---Chat-Web-Application
 This is a chatting web application called Pegion made using Node.JS  Express  HTML  CSS  Socket.io
-This web app is completely scalable. you can user it without any hinderance.
+This web app is completely scalable. You can user it without any hinderance.
 
 ---> To use this app follow the steps: <--- 
 1. You need to install nodeJS.
@@ -12,4 +12,4 @@ This web app is completely scalable. you can user it without any hinderance.
 6. Enter any password.
 7. Login and have fun using the web-app.
 
-data.txt is a txt file that stores your username to transfer it to server later. it keeps chaging as more users join. You can upgrade it using any database (eg. MongoDb)
+data.txt is a txt file that stores your username to transfer it to server later. It keeps chaging as more users join. You can upgrade it using any database (eg. MongoDb)
